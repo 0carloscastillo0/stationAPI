@@ -1,0 +1,12 @@
+{
+  "id": 1663,
+  "compania": "COPEC",
+  "direccion": "Lía Aguirre 10",
+  "comuna": "La Florida",
+  "region": "Metropolitana de Santiago",
+  "latitud": -33.52311011373261,
+  "longitud": -70.59966266155243,
+  "distancia(lineal)": 2.78,
+  "precio93": 1521,
+  "tiene_tienda": true
+}

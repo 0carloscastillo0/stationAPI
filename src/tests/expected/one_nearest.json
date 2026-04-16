@@ -1,0 +1,12 @@
+{
+  "id": 1664,
+  "compania": "COPEC",
+  "direccion": "Trinidad 1694",
+  "comuna": "La Florida",
+  "region": "Metropolitana de Santiago",
+  "latitud": -33.546724141506395,
+  "longitud": -70.61439871788025,
+  "distancia(lineal)": 0.69,
+  "precio93": 1550,
+  "tiene_tienda": false
+}

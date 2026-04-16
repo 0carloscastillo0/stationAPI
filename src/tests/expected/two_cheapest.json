@@ -1,0 +1,12 @@
+{
+  "id": 1958,
+  "compania": "OIL BOX",
+  "direccion": "Santa Rosa 9291",
+  "comuna": "San Ramón",
+  "region": "Metropolitana de Santiago",
+  "latitud": -33.54715334646909,
+  "longitud": -70.63364624977112,
+  "distancia(lineal)": 1.45,
+  "precio93": 1497,
+  "tiene_tienda": false
+}

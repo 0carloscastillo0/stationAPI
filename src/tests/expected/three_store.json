@@ -1,0 +1,12 @@
+{
+  "id": 1668,
+  "compania": "COPEC",
+  "direccion": "Av Americo vespucio 9150",
+  "comuna": "La Florida",
+  "region": "Metropolitana de Santiago",
+  "latitud": -33.537218493579786,
+  "longitud": -70.60895383358002,
+  "distancia(lineal)": 1.1,
+  "precio93": 1535,
+  "tiene_tienda": true
+}
