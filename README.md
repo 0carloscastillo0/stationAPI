@@ -4,6 +4,8 @@ API REST que permite buscar estaciones de servicio en Chile según distintos cri
 
 La API fue construida mediante el framework Flask, con el lenguaje de programación Python y utilizando la API de [Bencina en Línea](https://www.bencinaenlinea.cl/#/busqueda_estaciones).
 
+Para ejecutar la API, procure tener instalado git y python en su computador.
+
 ---
 
 ## 🚀 Instalación y Ejecución
@@ -13,6 +15,8 @@ Abra la terminal de su sistema y ejecute los siguientes comandos:
 
 ```bash
 git clone https://github.com/0carloscastillo0/stationAPI.git
+```
+```bash
 cd stationApi
 ```
 
@@ -51,7 +55,7 @@ La API estará disponible en:
 ```
 http://localhost:5000
 ```
-Al ingresar, visualizará el siguiente JSON:
+Al ingresar el enlace desde un navegador o en un cliente, visualizará el siguiente JSON:
 ```json
 {
     "endpoint": "/api/stations/search?lat={latitud}&lng={longitud}&product={producto}&nearest={bool}&store={bool}&cheapest={bool}",
@@ -88,7 +92,7 @@ En la siguiente Tabla, se muestra la información de cada parámetro como el tip
 
 ## 📌 Ejemplos de uso por caso
 
-El endpoint está diseñado para responder con éxito 4 casos de búsqueda. A continuación, se mencionan los parámetros a utilizar en el endpoint para cada caso, y su respuesta esperada. Cada caso puede ser probado desde el navegador o desde un cliente (como Postman, usando el método GET).
+El endpoint está diseñado para responder con éxito 4 casos de búsqueda. A continuación, se mencionan los parámetros a utilizar en el endpoint para cada caso y su respuesta esperada. Cada caso puede ser probado desde el navegador o desde un cliente (como Postman, usando el método GET).
 
 ---
 ### Caso 1: Estación más cercana por producto
@@ -229,7 +233,7 @@ http://localhost:5000/api/stations/search?lat=-33.542048&lng=-70.619269&product=
 ---
 
 ## 🏗️ Estructura de la API
-A continuación, se muestra una breve descripción de la estructura de archivos y carpetas relevantes de la API:
+A continuación, se presenta una breve descripción de la estructura de archivos y carpetas relevantes de la API:
 
 ```bash
 .
@@ -310,7 +314,7 @@ pytest src/tests/test_search_errors.py -v
 pytest src/tests/test_search_endpoint.py --verbose-json -s
 ```
 
-Cabe mencionar que en los test de cada de éxito, utiliza datos mockeados, es decir, datos extraídos previamente de la API y almacenados en la carpeta data (src/tests/data). Esto permitió optimizar el rendimiento de los test dada una pequeña muestra de datos, evitando realizar varias llamadas a la API con miles de datos.
+Cabe mencionar que en los test de cada de éxito, utiliza datos mockeados, es decir, datos extraídos previamente de la API y almacenados ej formato JSON dentro en la carpeta data (./src/tests/data). Esto permitió optimizar el rendimiento y acelerar los test dada una pequeña muestra de datos, evitando realizar varias llamadas a la API con miles de datos.
 
 ---
 
