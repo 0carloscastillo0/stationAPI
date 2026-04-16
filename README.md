@@ -1,6 +1,6 @@
 # ⛽ API REST - Búsqueda de Estaciones de Combustible
 
-API REST que permite buscar estaciones de servicio en Chile según distintos criterios como cercanía, precio y disponibilidad de tienda. 
+API REST que permite buscar estaciones de combustible en Chile según distintos criterios como cercanía, precio y disponibilidad de tienda. 
 
 La API fue construida mediante el framework Flask, con el lenguaje de programación Python y utilizando la API de [Bencina en Línea](https://www.bencinaenlinea.cl/#/busqueda_estaciones).
 
@@ -20,7 +20,7 @@ git clone https://github.com/0carloscastillo0/stationAPI.git
 cd stationApi
 ```
 
-2. Después, crear y activar el entorno virtual:
+2. Después, crear y activar el entorno virtual (con python o python3):
 
 ```bash
 python3 -m venv venv
@@ -314,7 +314,7 @@ pytest src/tests/test_search_errors.py -v
 pytest src/tests/test_search_endpoint.py --verbose-json -s
 ```
 
-Cabe mencionar que en los test de cada de éxito, utiliza datos mockeados, es decir, datos extraídos previamente de la API y almacenados ej formato JSON dentro en la carpeta data (./src/tests/data). Esto permitió optimizar el rendimiento y acelerar los test dada una pequeña muestra de datos, evitando realizar varias llamadas a la API con miles de datos.
+Cabe mencionar que en los test de cada éxito, utiliza datos mockeados, es decir, datos extraídos previamente de la API y almacenados en formato JSON dentro en la carpeta data (./src/tests/data). Esto permitió optimizar el rendimiento y acelerar los test dada una pequeña muestra de datos, evitando realizar varias llamadas a la API con miles de datos.
 
 ---
 
